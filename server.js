@@ -9,6 +9,8 @@ const API_URL = process.env.API_URL; // Use API_URL from .env
 
 app.use(express.json());
 
+// Allow all origins during development
+app.use(cors());
 // CORS Configuration (commented out for local development)
 /*
 const corsOptions = {
